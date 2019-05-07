@@ -2,6 +2,6 @@ import React from 'react';
 
 // import { Container } from './styles';
 
-const Test = () => <p>Teste component</p>;
+const Signup = () => <div />;
 
-export default Test;
+export default Signup;

@@ -1,16 +1,21 @@
-import React, { Component } from 'react';
-import Test from '˜/components/Test.js';
+import React, { Fragment } from 'react';
+import { Provider } from 'react-redux';
+import ReduxToastr from 'react-redux-toastr';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <Test />
-        </header>
-      </div>
-    );
-  }
-}
+import './config/ReactotronConfig';
+
+import store from './store';
+import Routes from './routes';
+import GlobalStyle from './styles/global';
+
+const App = () => (
+  <Provider store={store}>
+    <Fragment>
+      <Routes />
+      <ReduxToastr />
+      <GlobalStyle />
+    </Fragment>
+  </Provider>
+);
 
 export default App;

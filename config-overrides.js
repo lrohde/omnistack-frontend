@@ -3,7 +3,7 @@ const { addBabelPlugin, override } = require('customize-cra');
 const rootImport = [
   'root-import',
   {
-    rootPathPrefix: '˜',
+    rootPathPrefix: '~',
     rootPathSuffix: 'src',
   },
 ];
